@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Crestron CH5 Simple</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="./node_modules/@crestron/ch5-theme/output/themes/light-theme.css" />
+    
+    </head>
+    <body>
+        <div class="selections">
+            <br>
+            <!-- Button 1 join 11 in Simpl -->
+            <ch5-button 
+                type="default"
+                shape="rectangle"
+                label="Button 1"
+                sendeventonclick="11"
+                receivestateselected="11">
+            </ch5-button>
+            <!-- Button 2 join 12 in Simpl -->
+            <ch5-button 
+                type="default"
+                shape="rectangle"
+                label="Button 2"
+                sendeventonclick="12"
+                receivestateselected="12">
+            </ch5-button>
+            <!-- Button 3 join 13 in Simpl -->
+            <ch5-button 
+                type="default"
+                shape="rectangle"
+                customclass="close-btn"
+                label="Hide Pages"
+                sendeventonclick="13"
+                receivestateselected="13">
+            </ch5-button>
+        </div>
+        <br>
+        <div class="sub-pages">
+            <ch5-triggerview class="triggerview" receivestateshow="21" gestureable="false" endless="false">
+                <h1>Page 1</h1>
+            </ch5-triggerview>
+
+            <ch5-triggerview class="triggerview" receivestateshow="22" gestureable="false" endless="false">
+                <h1>Page 2</h1>
+            </ch5-triggerview>
+        </div>
+
+        <script src="./node_modules/@crestron/ch5-crcomlib/build_bundles/umd/cr-com-lib.js"></script>
+    </body>
+</html>

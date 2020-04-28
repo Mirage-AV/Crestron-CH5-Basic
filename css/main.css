@@ -1,0 +1,17 @@
+
+.selections{
+    background-color: wheat;
+    height: 10vh;
+}
+
+.sub-pages{
+    background-color: wheat;
+    height: 40vh;
+}
+
+/* modifies the Crestron theme, use this if the normal CSS class doesn't work to change the style, this one is for the type="default" ch5-button */
+.ch5-button--default.close-btn{
+    background-color: red;
+    color: ivory;
+    border: 1px solid black;
+}
